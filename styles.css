@@ -90,3 +90,27 @@ button:hover {
         height: 100px;
     }
 }
+
+h2{
+    color: white;
+}
+
+p{ 
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+table, th, td {
+    border: 1px solid black;
+    color: white;
+}
+  
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
