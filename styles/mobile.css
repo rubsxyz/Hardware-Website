@@ -1,0 +1,12 @@
+@media (max-width: 570px) {
+    
+    #header-txt {
+        margin: 0px 8%;
+        line-height: 40px;
+        font-size: 2.5rem;
+    }
+
+    .list-8 {
+        column-count: 1;
+    }
+}

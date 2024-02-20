@@ -1,0 +1,20 @@
+body,
+body * {
+    margin:              0;
+    padding:             0;
+    text-decoration:  none;
+    box-sizing: border-box;
+    list-style:       none;    
+
+    --scrollbar-thumb-color: #393e46;
+    --scrollbar-track-color: #222831;
+}
+
+::-webkit-scrollbar { width: 12px; }
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track { background-color: var(--scrollbar-track-color); }
