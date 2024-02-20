@@ -1,133 +1,229 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tudo sobre Memória RAM</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <ul>
-            <li><a href="motherboard.html">Motherboard</a></li>
-            <li><a href="processadores.html">Processadores</a></li>
-            <li><a href="ram.html">Memora Ram</a></li>
-            <li><a href="grafica.html">Placa Grafica</a></li>
-            <li><a href="discos.html">Discos</a></li>
-        </ul>
-        <header>
-            <h1>Descubra tudo sobre a Memória RAM!</h1>
-        </header>
-        <main>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/~debug.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Memória RAM</title>
+</head>
+<body>
+    <header class="nav">
+        <h1 id="header-txt">Memória RAM</h1>
+        <a href="index.html">voltar</a>
+    </header>
+    <section id="wrapper-nav">
+        <div id="nav-elements">
+            <a href="motherboard.html"><button class="nav-btn">Motherboard</button></a>
+            <a href="processadores.html"><button class="nav-btn">Processadores</button></a>
+            <a href="ram.html" style="display: none;"><button class="nav-btn">Memória RAM</button></a>
+            <a href="grafica.html"><button class="nav-btn">Placa Gráfica</button></a>
+            <a href="discos.html"><button class="nav-btn">Discos</button></a>
+        </div>
+    </section>
+
+
+    <section id="wrapper-info">
+        <div class="content">
+
+            <div class="wrapper-article-theme">
+                <h5>O que é? Tipos? Quantidade? Qual Escolher?</h5>
+            </div>
+
             <h2>O que é Memória RAM?</h2>
             <p>
-                A Memória RAM (Random Access Memory) é um componente essencial
-                em qualquer dispositivo eletrônico, funcionando como a mesa de
-                trabalho temporária para dados e instruções usadas pelo
-                processador (CPU). Imagine a RAM como um grande armário com
-                gavetas numeradas - cada gaveta armazena uma informação
-                necessária para o processamento, sendo acessada pelo CPU quando
+                A Memória RAM <em>(Random Access Memory)</em> é um componente essencial
+                em qualquer dispositivo eletrônico, funcionando como a <b>mesa de
+                trabalho temporária</b> para dados e instruções usadas pelo
+                processador (CPU).
+            </p> <p>
+                Imagine a RAM como um grande armário com
+                gavetas numeradas, cada gaveta armazena uma <b>informação
+                necessária para o processamento</b>, sendo acessada pelo CPU quando
                 necessário.
             </p>
-            <img src="ram-ilustracao.jpg" alt="Ilustração da Memória RAM" />
-
             <h2>Por que a Memória RAM é importante?</h2>
             <p>
                 Quanto mais RAM você tem, mais tarefas simultâneas o dispositivo
                 pode realizar e com maior agilidade. Ela impacta diretamente na
                 velocidade de carregamento de programas, abertura de arquivos, e
                 performance geral.
-            </p>
+            </p><br>
 
-            <h2>Tipos de Memória RAM</h2>
-            <ul>
-                <li>
-                    <strong>DDR3:</strong> Mais antiga, presente em alguns
-                    dispositivos mais antigos.
+            <h2>Tipos de Memória RAM:</h2>
+            <ol class="wrapper-list">
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">DDR3:</strong><br> Mais antiga, presente em alguns
+                    dispositivos mais antigos; 
                 </li>
-                <li>
-                    <strong>DDR4:</strong> Padrão atual, mais rápida e eficiente
-                    em termos de energia.
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">DDR4:</strong><br> Padrão atual, mais rápida e eficiente
+                    em termos de energia;     
                 </li>
-                <li>
-                    <strong>DDR5:</strong> Última geração, oferecendo o melhor
-                    desempenho, mas ainda em fase de adoção.
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">DDR5:</strong><br> Última geração, oferecendo o melhor
+                    desempenho, mas ainda em fase de adoção;
                 </li>
-            </ul>
+            </ol>
 
-            <h2>Quanto de RAM precisa?</h2>
-            <p>A quantidade ideal depende do uso:</p>
-            <ul>
-                <li>
-                    <strong>Uso básico:</strong> 4GB a 8GB (navegação web,
-                    edição de textos).
-                </li>
-                <li>
-                    <strong>Multitarefas:</strong> 8GB a 16GB (várias abas,
-                    jogos leves).
-                </li>
-                <li>
-                    <strong>Jogos pesados, edição de vídeo:</strong> 16GB ou
-                    mais.
-                </li>
-            </ul>
+            <h2>Quantidade de RAM</h2>
+            <p>A quantidade de RAM necessária para um sistema depende de vários fatores, incluindo o tipo de uso que você fará do computador, os aplicativos que você planeja executar, a complexidade das tarefas e o sistema operacional.</p>
 
-            <h2>Fatores ao escolher a RAM</h2>
-            <ul>
-                <li>
-                    <strong>Tipo de RAM:</strong> DDR3, DDR4 ou DDR5 (verifique
-                    compatibilidade com placa-mãe).
-                </li>
-                <li>
-                    <strong>Capacidade:</strong> de acordo com o uso, seguindo
-                    as recomendações acima.
-                </li>
-                <li>
-                    <strong>Frequência:</strong> determina a velocidade de
-                    transferência de dados (MHz).
-                </li>
-                <li>
-                    <strong>Latência:</strong> tempo de acesso aos dados (menor
-                    é melhor).
-                </li>
-            </ul>
+            <div class="wrapper-article-container">
+                <div class="wrapper-ram-tittle">
+                    <i class="fa fa-circle-question"></i>
+                    <h2 id="ram-tittle">Afinal, quanto de RAM precisa?</h2>
+                </div>
+
+                <ol class="wrapper-list">
+                    <li class="li-fm">
+                        <strong class="li-fm-tittle">Uso básico:</strong><br> 4GB a 8GB (navegação web,
+                        edição de textos);
+                    </li>
+                    <li class="li-fm">
+                        <strong class="li-fm-tittle">Multitarefas:</strong><br> 8GB a 16GB (várias abas,
+                        jogos leves);
+                    </li>
+                    <li class="li-fm">
+                        <strong class="li-fm-tittle">Jogos pesados, edição de vídeo:</strong><br> 16GB ou
+                        mais;
+                    </li>
+                </ol>
+            </div>
+
+
+            <h2>Escolher a RAM:</h2>
+            <p>Ao escolher a RAM para o seu sistema, existem vários fatores importantes a serem considerados 
+                para garantir um desempenho eficiente e adequado às suas necessidades</p>
+            
+            <div class="wrapper-article-container">
+                <div class="wrapper-ram-tittle">
+                    <i class="fa fa-circle-info"></i>
+                    <h2 id="ram-tittle">Fatores a considerar ao escolher a RAM:</h2>
+                </div>
+                
+                <ol class="wrapper-list">
+                    <li class="li-fm">
+                        <strong>Tipo de RAM:</strong> 
+                        <br>
+                        DDR3, DDR4 ou DDR5 (verifique
+                        compatibilidade com placa-mãe);
+                    </li>
+                    <li class="li-fm"> 
+                        <strong>Capacidade:</strong> 
+                        <br>
+                        De acordo com o uso, seguindo
+                        as recomendações acima;
+                    </li>
+                    <li class="li-fm">
+                        <strong>Frequência:</strong> 
+                        <br>
+                        Determina a velocidade de
+                        transferência de dados (MHz);
+                    </li>
+                    <li class="li-fm">
+                        <strong>Latência:</strong> 
+                        <br>
+                        Tempo de acesso aos dados (menor
+                        é melhor);
+                    </li>
+                </ol>
+            </div>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+            
+            <div class="wrapper-article-theme">
+                <h5>Dicas de Otimização
+            </div>
 
             <h2>Dicas para otimizar o uso da RAM</h2>
-            <ul>
-                <li>Feche programas não utilizados.</li>
-                <li>Desative aplicativos que iniciam automaticamente.</li>
-                <li>Utilize ferramentas para limpeza de RAM.</li>
-                <li>Desinstale programas desnecessários.</li>
-            </ul>
+            <p>Otimizar o uso da RAM em um sistema pode melhorar significativamente o desempenho geral do computador.</p>
+            <ol class="wrapper-list">
+                <li class="li-fm">Feche programas não utilizados;</li>
+                <li class="li-fm">Desative aplicativos que iniciam automaticamente;</li>
+                <li class="li-fm">Utilize ferramentas para limpeza de RAM;</li>
+                <li class="li-fm">Desinstale programas desnecessários;</li>
+            </ol>
+            <p>
+                Lembre-se de que as configurações específicas podem variar dependendo do sistema operacional que você está usando. 
+                Experimente algumas destas dicas e veja quais funcionam melhor para o seu caso.
+            </p>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+
+            <div class="wrapper-article-theme">
+                <h5>Problemas, Solução</h5>
+            </div>
 
             <h2>Sinais de problemas com a RAM</h2>
-            <ul>
-                <li>Computador lento.</li>
-                <li>Travamentos frequentes.</li>
-                <li>Tela azul da morte (Windows).</li>
-            </ul>
-
-            <h2>Solução de problemas com a RAM</h2>
             <p>
-                É recomendado buscar ajuda técnica em caso de suspeita de
-                problemas na RAM, podendo envolver:
+                Problemas com a RAM podem levar a uma variedade de sintomas e comportamentos estranhos no seu computador. <br> 
+                Aqui estão alguns sinais de problemas com a RAM:
             </p>
-            <ul>
-                <li>
-                    <strong>Teste da RAM:</strong> softwares e ferramentas
-                    específicas.
-                </li>
-                <li>
-                    <strong>Reinstalação da RAM:</strong> verificar fixação e
-                    limpeza de contatos.
-                </li>
-                <li>
-                    <strong>Atualização de drivers:</strong> placa-mãe e BIOS.
-                </li>
-                <li>
-                    <strong>Substituição da RAM:</strong> em casos de danos
-                    permanentes.
-                </li>
-            </ul>
-        </main>
-    </body>
+
+            <ol class="wrapper-list">
+                <li class="li-fm">Computador lento;</li>
+                <li class="li-fm">Travamentos frequentes;</li>
+                <li class="li-fm">Tela azul da morte (Windows);</li>
+                <li class="li-fm">Teste de memória falho;</li>
+            </ol>
+            <p>
+                Se você suspeita de problemas com a RAM, é recomendável realizar <b>testes de memória</b>, verificar os <b>
+                logs do sistema</b> e, se necessário, <b>substituir</b> ou <b>adicionar módulos de RAM</b>.
+            </p>
+
+            <div class="wrapper-article-container">
+                <div class="wrapper-ram-tittle">
+                    <i class="fa fa-circle-question"></i>
+                    <h2 id="ram-tittle">Solução de problemas com a RAM</h2>
+                </div>
+                <p class="p-row">
+                    É recomendado buscar ajuda técnica em caso de suspeita de
+                    problemas na RAM, podendo envolver:
+                </p>
+
+                <ol class="wrapper-list"> 
+                    <li class="li-fm">
+                        <strong>Teste da RAM:</strong> <br>
+                        Softwares e ferramentas específicas.
+                    </li>
+                    <li class="li-fm">
+                        <strong>Reinstalação da RAM:</strong> <br>
+                        Verificar fixação e limpeza de contatos.
+                    </li>
+                    <li class="li-fm">
+                        <strong>Atualização de drivers:</strong> <br>
+                        Placa-mãe e BIOS.
+                    </li>
+                    <li class="li-fm">
+                        <strong>Substituição da RAM:</strong> <br>
+                        Em casos de danos permanentes.
+                    </li>
+                </ol>
+
+            </div>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+
+
+            <a id="pptx-download" href="pptx/RAM.pptx">Download PowerPoint</a>
+        </div>
+    </section>
+
+    
+    <div class="wrap-sep">
+        <hr class="sub">
+    </div>
+</body>
 </html>

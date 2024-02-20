@@ -1,12 +1,23 @@
+@media (max-width: 1000px) { 
+    #wrapper-btn {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    button {
+        width: 200px;
+        height: 100px;
+    }
+}
+
 @media (max-width: 570px) {
     
     #header-txt {
-        margin: 0px 8%;
         line-height: 40px;
         font-size: 2.5rem;
     }
 
-    .list-8 {
-        column-count: 1;
-    }
+    .wrapper-list   { padding: 20px 30px; }
+    .list-8         { column-count: 1; }
+
 }
