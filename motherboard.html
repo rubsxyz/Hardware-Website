@@ -7,47 +7,69 @@
     <title>Motherboard</title>
 </head>
 <body>
-    <header>
-        <h1>Motherboard</h1>
+    <header class="nav">
+        <h1 id="header-txt">Motherboard</h1>
+        <a href="index.html">voltar</a>
     </header>
-    <ul>
-        <li><a href="motherboard.html">Motherboard</a></li>
-        <li><a href="processadores.html">Processadores</a></li>
-        <li><a href="ram.html">Memora RAM</a></li>
-        <li><a href="grafica.html">Placa Grafica</a></li>
-        <li><a href="discos.html">Discos</a></li>
-        <li><a href="index.html">Voltar</a></li>
-    </ul>
-    <h1>Motherboard</h1><img src="img/motherboardatx-removebg-preview.png">
-    <p>Esta é a apresentação das Motherboard.</p><br>
-
-    <h2>Componentes Vitais da Motherboard</h2>
-    <p>A motherboard é a placa principal que contém todos os componentes essenciais para o funcionamento do sistema, como a CPU, memória RAM, memória ROM e slots de expansão.</p>
-    <br>
-
-    <h2>Características da Motherboard:</h2>
-    <ul>
-        <li>Slots de Expansão (PCI, PCI-E, etc.)</li>
-        <li>Suporte para placas gráficas múltiplas (AMD e NVIDIA)</li>
-        <li>Ligações ao Exterior/Portas</li>
-        <li>Barramentos</li>
-    </ul><br>
-
-    <h2>Funções da Motherboard:</h2>
-    <p>A motherboard determina o tipo e quantidade máxima de memória RAM, o número e tipo de placas que podem ser instaladas, 
-        e geralmente inclui placas de som, placas de rede e outros componentes.</p><br>
-
-    <h2>Tipos de Motherboards:</h2>
-    <p>Existem diferentes tipos de motherboards: Motherboard XT, Motherboard AT, Motherboard VX, Motherboard FX, Motherboard TX, Motherboard ATX, Motherboard BTX, Motherboard ITX.<br>
-        Motherboard XT e AT: Antigos, com limitações, usados nos anos 80 e 90.<br>
-        Motherboard VX, FX e TX: Variantes menos comuns do AT, também usadas nos anos 90.<br>
-        Motherboard ATX: Padrão dominante desde meados dos anos 90, com ampla expansibilidade.<br>
-        Motherboard BTX: Tentativa de introduzir um novo padrão com melhor eficiência térmica.<br>
-        Motherboard ITX: Projetado para sistemas compactos e de baixo consumo de energia.<br>
-    </p>
-    <br>
+    <section id="wrapper-nav">
+        <div id="nav-elements">
+            <a href="motherboard.html" style="display: none;"><button class="nav-btn">Motherboard</button></a>
+            <a href="processadores.html"><button class="nav-btn">Processadores</button></a>
+            <a href="ram.html"><button class="nav-btn">Memoria RAM</button></a>
+            <a href="grafica.html"><button class="nav-btn">Placa Grafica</button></a>
+            <a href="discos.html"><button class="nav-btn">Discos</button></a>
+        </div>
+    </section>
 
 
-    <a href="pptx/Motherboard.pptx">Download PowerPoint</a>
+    <section id="wrapper-info">
+        <div class="content">
+            <h2>Componentes Vitais da Motherboard</h2>
+            <p>A motherboard é a placa principal que contém <b>todos</b> os componentes essenciais para o funcionamento do sistema, como a <b>CPU</b>, <b>Memória RAM</b>, <b>Memória ROM</b> e <b>Slots de Expansão</b>.</p>
+            <br>
+            
+            <h2>Características da Motherboard</h2>
+            <ol class="wrapper-list list-4">
+                <li class="li-cm">Slots de Expansão (PCI, PCI-E, etc.);</li>
+                <li class="li-cm">Suporte para placas gráficas múltiplas (AMD e NVIDIA);</li>
+                <li class="li-cm">Ligações ao Exterior/Portas;</li>
+                <li class="li-cm">Barramentos;</li>
+            </ol>
+            <br>
+            
+            <h2>Funções da Motherboard</h2>
+            <p>A motherboard determina o tipo e quantidade máxima de memória RAM, o número e tipo de placas que podem ser instaladas, 
+            e geralmente inclui placas de som, placas de rede e outros componentes.</p><br>
+            <h2 style="margin-bottom: 10px;">Tipos de Motherboards:</h2>
+                <ol class="wrapper-list list-8">
+                    <li class="li-fm">Motherboard XT</li>
+                    <li class="li-fm">Motherboard AT</li>
+                    <li class="li-fm">Motherboard VX</li>
+                    <li class="li-fm">Motherboard FX</li>
+                    <li class="li-fm">Motherboard TX</li>
+                    <li class="li-fm">Motherboard ATX</li>
+                    <li class="li-fm">Motherboard BTX</li>
+                    <li class="li-fm">Motherboard ITX</li>
+                </ol>
+
+                <div class="wrap-sep">
+                    <hr class="sep">
+                </div>
+
+                <b>Motherboard XT e AT:</b><br>
+                <p>Antigos, com limitações, usados nos anos 80 e 90.</p><br>
+                <b>Motherboard VX, FX e TX:</b><br>
+                <p>Variantes menos comuns do AT, também usadas nos anos 90.</p><br>
+                <b>Motherboard ATX:</b><br>
+                <p>Padrão dominante desde meados dos anos 90, com expansibilidade.</p><br>
+                <b>Motherboard BTX:</b><br>
+                <p>Tentativa de introduzir um novo padrão com melhor eficiência térmica.</p><br>
+                <b>Motherboard ITX:</b><br>
+                <p>Projetado para sistemas compactos e de baixo consumo de energia.</p><br>
+            </p><br>
+
+            <a style="text-decoration: underline;" href="pptx/Motherboard.pptx">Download PowerPoint</a>
+        </div>
+    </section>
 </body>
 </html>
