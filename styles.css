@@ -6,6 +6,7 @@
     --third-color: #f96d00;
     --fourth-color: #f2f2f2;
     --shadow-color: #171c24;
+    --box-text-color: rgb(182, 182, 182);
     --font: "Kode Mono", monospace;
     --article-tittle: 1.25rem;
     --article-subtittle: 1.15rem;
@@ -20,11 +21,10 @@ body {
 
 h2 {
     font-size: var(--article-tittle);
-    margin-bottom: 10px;
 }
 
 h4 {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-size: var(--article-subtittle);
 }
 
@@ -183,20 +183,20 @@ header,
     padding: 20px 60px;
     border-radius: 25px;
     box-shadow: inset 0 -0.25em var(--shadow-color);
+    justify-content: space-between;
 }
 
 .list-8 { column-count: 2; }
-.list-4 { column-count: 1; }
 
 .li-cm {
-    color: rgb(182, 182, 182);
+    color: var(--box-text-color);
     margin-bottom: 5px;
     list-style: decimal inside;
     width: 100%;
 }
 
 .li-fm {
-    color: rgb(182, 182, 182);
+    color: var(--box-text-color);
     margin-bottom: 10px;
     list-style: decimal inside;
     width: 100%;
@@ -209,8 +209,8 @@ header,
 .li-fm::marker,
 .li-cm::marker {
     color: var(--third-color);
+    font-weight: bold;
 }
-
 
 hr {
     background-color: var(--fourth-color);
@@ -241,7 +241,10 @@ hr {
 }
 
 /* ram */
-.li-fm-tittle { color: var(--third-color); }
+.li-fm-tittle { 
+    color: var(--third-color); 
+    font-size: 17px;
+}
 
 #pptx-download {
     display: flex;
@@ -251,8 +254,19 @@ hr {
 
 i {
     font-size: 1.8rem;
-    color: #ffffff;
+    color: var(--fourth-color);
     opacity: 80%;
+}
+
+.tittle { margin: 10px 0px 5px; }
+
+span { margin-left: 20px; }
+
+.wrapper-tittle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 5px 0px;
 }
 
 #ram-tittle { margin: 0; }
@@ -261,9 +275,10 @@ i {
     display: flex;
     gap: 20px;
     background-color: var(--third-color);
-    border-radius: 25px;
+    border-radius: 25px 25px 0px;
     align-items: center;
 }
+
 
 .wrapper-article-container {
     background-color: var(--secondary-color);
@@ -274,3 +289,47 @@ i {
     padding: 20px 60px 0px 60px;
     margin: 0;
 }
+
+
+
+/* grafica */
+.table {
+    border-radius: 0px 0px 25px 25px;
+    border-collapse: collapse;
+    padding: 2px 0px;
+    background-color: var(--secondary-color);
+    color: var(--box-text-color);
+    margin-bottom: 20px;
+}
+
+tr th:first-child {
+    padding: 10px;
+    width: 120px;
+}
+
+tr th:last-child {
+    font-weight: 100;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+.col-table th:first-child {
+    border-right: 2px solid var(--third-color); 
+}
+
+.col-table {
+    width: 100%;
+    height: 70px;
+}
+
+.col-tittle {
+    text-align: center !important;
+    padding: 0;
+    text-transform: uppercase;
+    color: var(--third-color);
+    font-weight: bold !important;
+    border-bottom: 2px solid var(--third-color);
+    font-size: var(--article-subtittle);
+}
+
+/* disco */

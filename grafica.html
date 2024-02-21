@@ -3,44 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/~debug.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <title>Placa Gráfica</title>
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Arquitectura Hardware | Placa Gráfica</title>
 </head>
 <body>
-    <header>
+    <header class="nav">
         <h1 id="header-txt">Placa Gráfica</h1>
+        <a href="index.html">voltar</a>
     </header>
-    <section id="wrapper-btn">
-        <a href="motherboard.html"><button>Motherboard</button></a>
-        <a href="processadores.html"><button >Processadores</button></a>
-        <a href="ram.html"><button>Memoria RAM</button></a>
-        <a href="grafica.html"><button>Placa Grafica</button></a>
-        <a href="discos.html"><button>Discos</button></a>
+    <section id="wrapper-nav">
+        <div id="nav-elements">
+            <a href="motherboard.html"><button class="nav-btn">Motherboard</button></a>
+            <a href="processadores.html"><button class="nav-btn">Processadores</button></a>
+            <a href="ram.html"><button class="nav-btn">Memória RAM</button></a>
+            <a href="grafica.html" style="display: none;"><button class="nav-btn">Placa Gráfica</button></a>
+            <a href="discos.html"><button class="nav-btn">Discos</button></a>
+        </div>
     </section>
-    <section>
-        <h2>Função da placa gráfica</h2>
-        <p>A placa gráfica, também conhecida como GPU(Unidade de Processamento Gráfico), é o componente do computador que fica responsável por realizar processos e os cálculos necessários para reprodução dos gráficos gerados pelo sistema. Ou seja, converte dados binários em dados gráficos por um periférico de saída de imagem(ex: Monitor).</p>
-        <br><br>
-        <h2>Tipos de Placas Gráficas</h2>
-        <table>
-            <tr>
-                <th>Tipo</th>
-                <th>Descrição</th>
-            </tr>
-            <tr>
-                <th>Onboard</th>
-                <th>Placas gráficas integradas, são aquelas que vêm  incorporadas no processador ou na motherboard.</th>
-            </tr>
-            <tr>
-                <th>Off–board</th>
-                <th>Placas gráficas dedicadas a têm sua própria unidade de processamento gráfico (GPU) e memória dedicada.</th>
-            </tr>
-            <tr>
-                <th>eGPU</th>
-                <th>Placas gráficas externas são conectadas por meio de uma interface externa, como Thunderbolt ou USB.</th>
-            </tr>
-        </table>
-    </section>
+
+
+    <section id="wrapper-info">
+        <div class="content">
+
+            <div class="wrapper-article-theme">
+                <h5>Função.</h5>
+            </div>
+            <div class="wrapper-tittle">
+                <h2>Função da placa gráfica</h2>
+                <span><i class="fa-solid fa-turn-down"></i></span>
+            </div>
+            <p>
+                A placa gráfica, também conhecida como <b>GPU</b> <em>(Unidade de Processamento Gráfico)</em>, 
+                é o componente do computador que fica responsável por realizar processos e os 
+                cálculos necessários para reprodução dos gráficos gerados pelo sistema. Ou seja, 
+                converte dados binários em dados gráficos por um periférico de saída de imagem.
+            </p>
+
+            <div class="wrapper-article-container">
+                <div class="wrapper-ram-tittle">
+                    <i class="fa fa-circle-info"></i>
+                    <h2 id="inside-tittle">Tipos de Placas Gráficas</h2>
+                </div>
     
+                <div class="wrapper-list table">
+                    <table>
+                        <tr class="col-table">
+                            <th class="col-tittle">Tipo</th>
+                            <th class="col-tittle">Descrição</th>
+                        </tr>
+                        <tr class="col-table">
+                            <th>Onboard</th>
+                            <th>Placas gráficas integradas, são aquelas que vêm  incorporadas no processador ou na motherboard.</th>
+                        </tr>
+                        <tr class="col-table">
+                            <th>Off–board</th>
+                            <th>Placas gráficas dedicadas a têm sua própria unidade de processamento gráfico (GPU) e memória dedicada.</th>
+                        </tr>
+                        <tr class="col-table">
+                            <th>eGPU</th>
+                            <th>Placas gráficas externas são conectadas por meio de uma interface externa, como Thunderbolt ou USB.</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+
+            <a id="pptx-download" href="pptx/UFCD-5098 1.pptx">Download PowerPoint</a>
+        </div>
+    </section>
+
+    
+    <div class="wrap-sep">
+        <hr class="sub">
+    </div>
 </body>
 </html>

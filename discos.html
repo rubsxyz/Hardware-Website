@@ -1,134 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tudo sobre Discos de Computador</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <ul>
-            <li><a href="motherboard.html">Motherboard</a></li>
-            <li><a href="processadores.html">Processadores</a></li>
-            <li><a href="ram.html">Memora Ram</a></li>
-            <li><a href="grafica.html">Placa Grafica</a></li>
-            <li><a href="discos.html">Discos</a></li>
-        </ul>
-        <header>
-            <h1>Tudo sobre Discos</h1>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/~debug.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Arquitectura Hardware | Discos</title>
+</head>
+<body>
+    <header class="nav">
+        <h1 id="header-txt">Discos</h1>
+        <a href="index.html">voltar</a>
+    </header>
+    <section id="wrapper-nav">
+        <div id="nav-elements">
+            <a href="motherboard.html"><button class="nav-btn">Motherboard</button></a>
+            <a href="processadores.html"><button class="nav-btn">Processadores</button></a>
+            <a href="ram.html"><button class="nav-btn">Memória RAM</button></a>
+            <a href="grafica.html"><button class="nav-btn">Placa Gráfica</button></a>
+            <a href="discos.html" style="display: none;"><button class="nav-btn">Discos</button></a>
+        </div>
+    </section>
 
-        <section class="conteudo">
-            <h2>O que são discos?</h2>
+
+    <section id="wrapper-info">
+        <div class="content">
+
+            <div class="wrapper-article-theme">
+                <h5>O que é? Tipos.</h5>
+            </div>
+
+            <h2 class="tittle">O que são discos?</h2>
             <p>
                 Os discos de computador são dispositivos de armazenamento que
-                guardam dados em discos magnéticos ou de estado sólido. Eles são
-                essenciais para o funcionamento do computador, armazenando o
-                sistema operacional, programas, arquivos e configurações.
+                <b>guardam</b> dados em discos magnéticos ou de estado sólido. 
+                Eles são essenciais para o funcionamento do computador, <b>armazenando o
+                sistema operacional</b>, <b>programas</b>, <b>arquivos</b> e <b>configurações</b>.
             </p>
-            <p>Existem três tipos principais de discos:</p>
-            <ul>
-                <li>
-                    **HDD (Hard Disk Drive):** Discos rígidos tradicionais que
-                    usam pratos magnéticos para armazenar dados. São mais
-                    baratos, porém mais lentos e menos duráveis que os SSDs.
+            <h2 class="tittle"> Existem três tipos principais de discos:</h2>
+            <ol class="wrapper-list">
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">HDD <em>(Hard Disk Drive)</em>:</strong> <br> 
+                    Discos rígidos tradicionais que usam pratos magnéticos para 
+                    armazenar dados. São mais baratos, porém mais lentos e menos 
+                    duráveis que os SSDs.
                 </li>
-                <li>
-                    **SSD (Solid State Drive):** Discos de estado sólido que
-                    usam memória flash para armazenar dados. São mais caros,
-                    porém mais rápidos e duráveis que os HDDs.
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">SSD <em>(Solid State Drive)</em>:</strong> <br> 
+                    Discos de estado sólido que usam memória flash para armazenar dados. 
+                    São mais caros, porém mais rápidos e duráveis que os HDDs.
                 </li>
-                <li>
-                    **NVMe (Non-Volatile Memory Express):** Uma interface de
-                    alta velocidade para SSDs que oferece ainda mais desempenho.
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">NVMe <em>(Non-Volatile Memory Express)</em>:</strong> <br> 
+                    Uma interface de alta velocidade para SSDs que oferece ainda mais desempenho.
                 </li>
-            </ul>
-        </section>
-        <section class="melhores-praticas">
-            <h2>Melhores Práticas para o Uso de Discos</h2>
+            </ol>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+
+            <div class="wrapper-article-theme">
+                <h5>Boas Práticas.</h5>
+            </div>
+
+            <div class="wrapper-tittle">
+                <h2>Melhores Práticas para o Uso de Discos</h2>
+                <span><i class="fa-solid fa-turn-down"></i></span>
+            </div>
             <p>
                 Para manter o desempenho ideal do seu disco e prolongar sua vida
                 útil, adote algumas boas práticas:
             </p>
 
-            <h3>Desfragmentação (HDD)</h3>
-            <p>
-                Discos rígidos (HDD) se beneficiam da desfragmentação, que
-                organiza os dados fisicamente no disco, melhorando a velocidade
-                de leitura/escrita. Use ferramentas de desfragmentação do
-                sistema operacional ou softwares específicos.
-            </p>
+            <ol class="wrapper-list">
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Desfragmentação <em>(HDD)</em>:</strong>
+                    <p>
+                        Discos rígidos (HDD) se beneficiam da desfragmentação, que
+                        organiza os dados fisicamente no disco, melhorando a velocidade
+                        de leitura/escrita. Use ferramentas de desfragmentação do
+                        sistema operacional ou softwares específicos.
+                    </p>
+                </li>
 
-            <h3>TRIM (SSD)</h3>
-            <p>
-                Discos SSD exigem o TRIM, que informa ao disco quais blocos de
-                dados não são mais usados, para otimizar o desempenho e vida
-                útil. A maioria dos sistemas operacionais modernos faz isso
-                automaticamente.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">TRIM <em>(SSD)</em>:</strong>
+                    <p>
+                        Discos SSD exigem o TRIM, que informa ao disco quais blocos de
+                        dados não são mais usados, para otimizar o desempenho e vida
+                        útil. A maioria dos sistemas operacionais modernos faz isso
+                        automaticamente.
+                    </p>
+                </li>
 
-            <h3>Softwares de otimização</h3>
-            <p>
-                Utilize softwares para otimizar o disco: limpeza de arquivos
-                temporários, desfragmentação (HDD), otimização de configurações
-                do sistema.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Softwares de otimização:</strong>
+                    <p>
+                        Utilize softwares para otimizar o disco: limpeza de arquivos
+                        temporários, desfragmentação (HDD), otimização de configurações
+                        do sistema.
+                    </p>
+                </li>
 
-            <h3>Atualizações</h3>
-            <p>
-                Mantenha o sistema operacional e drivers de dispositivo
-                atualizados para compatibilidade e melhor desempenho.
-                Atualizações de firmware do disco também podem ser necessárias.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Atualizações:</strong>
+                    <p>
+                        Mantenha o sistema operacional e drivers de dispositivo
+                        atualizados para compatibilidade e melhor desempenho.
+                        Atualizações de firmware do disco também podem ser necessárias.
+                    </p>
+                </li>
 
-            <h3>Cuidado com o transporte e armazenamento</h3>
-            <p>
-                Evite quedas, vibrações e temperaturas extremas que podem
-                danificar o disco. Transporte-o em um estojo protetor e
-                armazene-o em local fresco e seco.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Cuidado com o transporte e armazenamento:</strong>
+                    <p>
+                        Evite quedas, vibrações e temperaturas extremas que podem
+                        danificar o disco. Transporte-o em um estojo protetor e
+                        armazene-o em local fresco e seco.
+                    </p>
+                </li>
 
-            <h3>Backup de dados</h3>
-            <p>
-                Faça backup regular de seus dados importantes em discos
-                externos, nuvem ou fita magnética para evitar perda em caso de
-                falha do disco.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Backup de dados:</strong>
+                    <p>
+                        Faça backup regular de seus dados importantes em discos
+                        externos, nuvem ou fita magnética para evitar perda em caso de
+                        falha do disco.
+                    </p>
+                </li>
 
-            <h3>Monitoramento do disco</h3>
-            <p>
-                Utilize ferramentas para monitorar a saúde do disco e detectar
-                problemas potenciais, como atributos S.M.A.R.T. (HDD),
-                temperatura, tempo de atividade e erros.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Monitoramento do disco:</strong>
+                    <p>
+                        Utilize ferramentas para monitorar a saúde do disco e detectar
+                        problemas potenciais, como atributos S.M.A.R.T. (HDD),
+                        temperatura, tempo de atividade e erros.
+                    </p>
+                </li>
 
-            <h3>Limpeza do disco</h3>
-            <p>
-                Remova arquivos desnecessários e programas que não usa para
-                liberar espaço e otimizar o desempenho. Utilize ferramentas de
-                limpeza do sistema operacional ou softwares específicos.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Limpeza do disco:</strong>
+                    <p>
+                        Remova arquivos desnecessários e programas que não usa para
+                        liberar espaço e otimizar o desempenho. Utilize ferramentas de
+                        limpeza do sistema operacional ou softwares específicos.
+                    </p>
+                </li>
 
-            <h3>Defragmentação de arquivos grandes</h3>
-            <p>
-                Para arquivos grandes (vídeos, etc.), a desfragmentação manual
-                pode melhorar o desempenho. Use ferramentas específicas para
-                desfragmentar arquivos grandes.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Defragmentação de arquivos grandes:</strong>
+                    <p>
+                        Para arquivos grandes (vídeos, etc.), a desfragmentação manual
+                        pode melhorar o desempenho. Use ferramentas específicas para
+                        desfragmentar arquivos grandes.
+                    </p>
+                </li>
 
-            <h3>Criptografia de dados</h3>
-            <p>
-                Proteja seus dados contra acesso não autorizado em caso de perda
-                ou roubo do disco usando softwares de criptografia confiáveis e
-                seguros.
-            </p>
+                <li class="li-fm">
+                    <strong class="li-fm-tittle">Criptografia de dados:</strong>
+                    <p>
+                        Proteja seus dados contra acesso não autorizado em caso de perda
+                        ou roubo do disco usando softwares de criptografia confiáveis e
+                        seguros.
+                    </p>
+                </li>
+
+            </ol>
 
             <p>
-                Estas práticas variam de acordo com o tipo de disco (HDD ou
-                SSD), sistema operacional e suas necessidades específicas.
-                Consulte a documentação do seu disco e sistema operacional para
+                Estas práticas variam de acordo com o tipo de disco <b><em>(HDD ou
+                SSD)</em></b>, sistema operacional e suas necessidades específicas.
+            </p>
+            <p>
+                Consulte a documentação do seu <b>disco</b> e <b>sistema operacional</b> para
                 mais informações.
             </p>
-        </section>
-    </body>
+
+            <div class="wrap-sep">
+                <hr class="sep">
+            </div>
+
+            <a id="pptx-download" href="pptx/UFCD-5098 1.pptx">Download PowerPoint</a>
+        </div>
+    </section>
+
+    <div class="wrap-sep">
+        <hr class="sub">
+    </div>
+</body>
 </html>

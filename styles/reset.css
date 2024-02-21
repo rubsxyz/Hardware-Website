@@ -10,6 +10,11 @@ body * {
     --scrollbar-track-color: #222831;
 }
 
+table {
+    border-spacing:     0px;
+    text-indent:    inherit;
+}
+
 ::-webkit-scrollbar { width: 12px; }
 
 ::-webkit-scrollbar-thumb {

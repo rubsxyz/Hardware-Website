@@ -20,4 +20,8 @@
     .wrapper-list   { padding: 20px 30px; }
     .list-8         { column-count: 1; }
 
+    .p-row {
+        padding: 20px 30px 0px 30px;
+    }
+
 }
