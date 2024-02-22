@@ -1,17 +1,17 @@
-@media (max-width: 1000px) { 
-    #wrapper-btn {
-        flex-direction: column;
-        margin-top: 100px;
-    }
-
-    button {
-        width: 200px;
-        height: 100px;
-    }
-}
-
 @media (max-width: 570px) {
     
+    
+    /* index */
+    .wrapper-lobby { padding: 30px 30px; }
+
+    .lobby-tittle {
+        display: flex;
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .lobby-btn {  width: 150px; }
+
     #header-txt {
         line-height: 40px;
         font-size: 2.5rem;
@@ -23,5 +23,4 @@
     .p-row {
         padding: 20px 30px 0px 30px;
     }
-
 }
